@@ -7,10 +7,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
 }
 header .header__logo {
     position: absolute;
-    top: 158px;
+    top: 198px;
 }
 header .header__title {
     width: 176px;
@@ -28,9 +29,13 @@ main .main__featured {
     margin: auto;
     text-align: center;
 }
-.main__featured .main__featured-language {
+
+.main__featured-language {
     position: absolute;
     width: 156px;
+}
+.main__featured-language:active {
+    border: 1px solid #36c;
 }
 .main__featured-language--english {
     top: 0;
@@ -78,21 +83,116 @@ main .main__featured {
 }
 .main__featured-language a strong {
     display: block;
+    font-family: 'Segoe UI';
+}
+.main__featured-language a strong:hover {
+    text-decoration: underline;
 }
 .main__featured-language a small {
     color: #54595d;
 }
 
+.main__search {
+    margin: 10px auto 28px auto;
+}
 .main__search-wrapper {
+    position: relative;
     width: 451px;
     height: 44px;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    border: 1px solid;
+}
+.main__search-input {
+    flex-grow: 1;
+    padding: 8px 64px 8px 12px;
+    border: 1px solid rgb(162, 169, 177);
+}
+.main__search-input:hover {
+    border-color: #72777d;
+}
+.main__search-input:focus {
+    outline: none;
+    border-color: #36c;
+    box-shadow: inset 0 0 0 1px #36c;
+}
+.main__search-select {
+    position: absolute;
+    height: 24px;
+    align-self: center;
+    right: 54px;
+    margin-right: 24px;
+    border: none;
+    color: #54595d;
+}
+.main__search-select:hover {
+    background-color: #f8f9fa;
+}
+.main__search-select:focus {
+    border: 1px solid #36c;
+    background-color: #f8f9fa;
+}
+.main__search-button-wrapper {
+    padding: 8px 16px;
+    background-color: #36c;
+    border: 1px solid #36c;
+}
+.main__search-button-wrapper:hover {
+    background: #447ff5;
+    border-color: #447ff5;
+}
+.main__search-button-wrapper:focus {
+    border-color: #2a4b8d;
+    box-shadow: inset 0 0 0 1px #36c, inset 0 0 0 2px #fff;
+    background-color: #2a4b8d;
+    outline: none;
 }
 .main__search-button {
-    width: 56px;
-    background-color: #36c;
-    border-color: #36c;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-image: url('../images/wikipedia-icons.svg');
+    background-position: 0 -697px;
+}
+
+.main__button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__button-wrapper > span {
+    width: 60px;
+    border-top: 1px solid #c8ccd1;
+}
+.main__button-wrapper > span:first-of-type {
+    margin-right: 15px;
+}
+.main__button-wrapper > span:last-of-type {
+    margin-left: 15px;
+}
+.main__button {
+    width: 300px;
+    height: 36px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(162, 169, 177);
+    background-color: #f8f9fa;
+    color: #36c;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+}
+.main__button-icon-left {
+    width: 22px;
+    height: 22px;
+    background-image: url('../images/wikipedia-icons.svg');
+    background-position: 0 -617px;
+}
+.main__button-icon-right {
+    width: 14px;
+    height: 14px;
+    background-image: url('../images/wikipedia-icons.svg');
+    background-position: 0 -527px;
 }
 
 .footer__nav {
