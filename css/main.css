@@ -4,7 +4,7 @@
 }
 
 body {
-    margin: 0.4rem 0 1.6rem;
+    margin: 4px 0 16px;
 }
 
 header {
@@ -367,6 +367,10 @@ footer > div > section:last-of-type {
 }
 .footer__nav li::after {
     content: "\2022";
+    margin: 0 7px 0 5px;
+}
+.footer__nav li:last-of-type::after {
+    content: none;
 }
 .footer__link {
     color: #36c;
