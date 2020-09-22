@@ -3,11 +3,15 @@
     padding: 0;
 }
 
+body {
+    margin: 4px 0 16px;
+}
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 header .header__logo {
     position: absolute;
@@ -22,6 +26,9 @@ header .header__title {
     background-position: 0 -254px;
 }
 
+main {
+    margin-bottom: 48px;
+}
 main .main__featured {
     position: relative;
     width: 546px;
@@ -195,12 +202,175 @@ main .main__featured {
     background-position: 0 -527px;
 }
 
+footer {
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    line-height: 1.5;
+}
+footer > div {
+    display: flex;
+    margin-top: -16px;
+    padding: 41.6px 12.8px 12.8px;
+    border-top: 1px solid #c8ccd1;
+}
+footer > div > section:first-of-type {
+    width: 495px;
+}
+footer > div > section:last-of-type {
+    width: 919px;
+}
+
+.footer__section--sidebar div {
+    width: 350px;
+    display: flex;
+    color: #54595d;
+}
+.footer__section--sidebar div a,
+.footer__section--projects div a {
+    color: #36c;
+    text-decoration: none;
+}
+.footer__wikimedia-foundation {
+    margin: 0 auto 32px;
+    padding: 0 20px 0 60px;
+    box-sizing: border-box;
+}
+.footer__wikimedia-foundation i {
+    width: 110px;
+    height: 45px;
+    margin-left: -50px;
+    margin-right: 6px;
+    background-image: url('../images/wikipedia-icons.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -212px;
+}
+.footer__wikipedia-store {
+    position: relative;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+}
+.footer__wikipedia-store > i {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+    background-image: url('../images/wikipedia-icons.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -719px;
+}
+.footer__wikipedia-store > div {
+    display: block;
+    padding: 8px 20px 8px 60px;
+}
+.footer__wikipedia-store > div > a {
+    font-weight: 700;
+}
+.footer__wikipedia-store > div > p {
+    margin: 13px 0;
+}
+.footer__wikipedia-store > div > a > i {
+    display: inline-block;
+    height: 38px;
+    background-image: url('../images/wikipedia-icons.svg');
+}
+.footer__google-play-store {
+    width: 124px;
+    background-position: 0 -541px;
+}
+.footer__app-store {
+    width: 110px;
+    background-position: 0 -579px;
+}
+
+.footer__section--projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer__section--projects > div {
+    height: 90px;
+}
+.footer__section--projects > div > div {
+    display: inline-block;
+}
+.footer__section--projects > div > div > a {
+    display: block;
+    font-size: 14px;
+}
+.footer__section--projects > div > div > span {
+    color: #54595d;
+}
+.footer__section--projects > div > i {
+    display: inline-block;
+    width: 50px;
+    background-image: url('../images/wikipedia-icons.svg');
+    vertical-align: top;
+}
+.commons {
+    height: 47px;
+    background-position: 0 0;
+}
+.wikivoyage {
+    height: 36px;
+    background-position: 0 -446px;
+}
+.wiktionary {
+    height: 37px;
+    background-position: 0 -482px;
+}
+.wikibooks {
+    height: 37px;
+    background-position: 0 -126px;
+}
+.footer__section--projects div .wikinews {
+    height: 26px;
+    background-image: url('../images/logo-wikinews.png');
+    background-size: 47px 26px;
+    background-position: 0 0;
+}
+.wikidata {
+    height: 49px;
+    background-position: 0 -163px;
+}
+.wikiversity {
+    height: 37px;
+    background-position: 0 -409px;
+}
+.wikiquote {
+    height: 42px;
+    background-position: 0 -286px;
+}
+.mediaWiki {
+    height: 42px;
+    background-position: 0 -47px;
+}
+.wikisource {
+    height: 39px;
+    background-position: 0 -328px;
+}
+.wikispecies {
+    height: 42px;
+    background-position: 0 -367px;
+}
+.meta-Wiki {
+    height: 37px;
+    background-position: 0 -89px;
+}
+
 .footer__nav {
     display: flex;
     justify-content: center;
 }
 .footer__nav li {
+    list-style-type: none;
     color: #54595d;
+}
+.footer__nav li::after {
+    content: "\2022";
+    margin: 0 7px 0 5px;
+}
+.footer__nav li:last-of-type::after {
+    content: none;
 }
 .footer__link {
     color: #36c;
